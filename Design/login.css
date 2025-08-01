@@ -1,0 +1,133 @@
+@import url("https://fontawesome.com/icons/eye?f=classic&s=solid");
+/* Background dan posisi form */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url("../Image/bd23.png"); /* path sudah benar */
+    background-size: cover;       /* Agar gambar menyesuaikan ukuran layar */
+    background-repeat: no-repeat; /* Jangan diulang */
+    background-position: center;  /* Posisi di tengah */
+    height: 100vh;                /* Tinggi 100% viewport */
+    width: 100vw;                 /* Lebar 100% viewport */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 80px;
+    height: auto;;
+}
+.logo img {
+    width: 100px;
+    height: auto;
+}
+.intro-text {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.intro-text h1 {
+    font-size: 24px;
+    margin: 0;
+     background-color: black;
+  color: white;
+}
+
+.intro-text p {
+    font-size: 14px;
+    color: #555;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    text-align: center;
+}
+
+.login-form {
+    background: white;
+    padding: 30px;
+    border-radius: 4px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.login-form input {
+    background-color: #f1f1f1;
+    border: none;
+    padding: 14px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    border-radius: 4px;
+    outline: none;
+}
+
+.login-form input::placeholder {
+    color: #999;
+}
+
+.login-form button {
+    background-color: #0004ff;
+    color: white;
+    padding: 14px;
+    font-size: 16px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.login-form button:hover {
+    background-color: #0059ff;
+}
+
+.register-text {
+    margin-top: 20px;
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+}
+
+.register-text a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.register-text a:hover {
+    text-decoration: underline;
+}
+.password-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.password-wrapper input {
+    width: 100%;
+    padding: 14px;
+    padding-right: 45px; /* tambahkan ruang buat icon mata */
+    font-size: 16px;
+    background-color: #f1f1f1;
+    border: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.password-wrapper i {
+    position: absolute;
+    top: 50%;
+    right: 15px; /* jarak dari kanan */
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #888;
+    cursor: pointer;
+}
+
+
+

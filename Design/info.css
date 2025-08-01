@@ -1,0 +1,185 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f4f9f4;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* HEADER */
+header {
+    background-color: #33691e;
+    color: white;
+    padding: 20px;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+}
+
+.logo h1 {
+    font-size: 22px;
+    color: white;
+}
+
+.menu-top {
+    display: flex;
+    gap: 20px;
+}
+
+.menu-top a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu-top a:hover {
+    text-decoration: underline;
+}
+
+/* PENCARIAN */
+.search-box {
+    background-color: #a5d6a7;
+    padding: 10px 20px;
+    text-align: right;
+}
+
+.search-box input[type="text"] {
+    padding: 6px 10px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* LAYOUT UTAMA */
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+}
+
+/* SIDEBAR KIRI */
+.sidebar-left {
+    flex: 1;
+    min-width: 180px;
+    background-color: #dcedc8;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.sidebar-left ul {
+    list-style: none;
+}
+
+.sidebar-left li {
+    margin-bottom: 10px;
+}
+
+.sidebar-left a {
+    display: block;
+    background-color: #f1f8e9;
+    color: #33691e;
+    padding: 8px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.sidebar-left a:hover {
+    background-color: #c5e1a5;
+}
+
+/* KONTEN UTAMA */
+.main-content {
+    flex: 3;
+    min-width: 300px;
+}
+
+.berita {
+    background-color: #fafafa;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.berita h2 {
+    margin-bottom: 10px;
+    font-size: 22px;
+    color: #33691e;
+}
+
+.berita .tanggal {
+    font-size: 12px;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.berita img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+.berita a {
+    text-decoration: none;
+    color: #2e7d32;
+    font-weight: bold;
+}
+
+.berita a:hover {
+    text-decoration: underline;
+}
+
+/* SIDEBAR KANAN */
+.sidebar-right {
+    flex: 1;
+    min-width: 200px;
+    background-color: #f1f8e9;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.sidebar-right h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #2e7d32;
+}
+
+.sidebar-right ul {
+    list-style: disc inside;
+    color: #444;
+}
+
+.sidebar-right li {
+    margin-bottom: 8px;
+}
