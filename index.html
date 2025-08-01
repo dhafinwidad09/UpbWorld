@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Redirect ke Login</title>
+    <script>
+        // Jika user belum login, arahkan ke login.html
+        if (localStorage.getItem("isLoggedIn") !== "true") {
+            window.location.href = "Login.html";
+        } else {
+            const username = localStorage.getItem("username");
+
+            // Arahkan berdasarkan role user
+            if (username === "admin") {
+                window.location.href = "home_admin.php"; // ✔ Admin ke halaman admin
+            } else if (username === "user") {
+                window.location.href = "home_user.html";  // ✔ User ke halaman user
+            } else {
+                // fallback kalau username tidak dikenal
+                localStorage.clear();
+                window.location.href = "Login.html";
+            }
+        }
+    </script>
+</head>
+
+</html>

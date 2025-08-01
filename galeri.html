@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Informasi</title>
+    <link rel="stylesheet" href="Design/galeri.css">
+    <script>
+        if (localStorage.getItem("isLoggedIn") !== "true") {
+            window.location.href = "Login.html";
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <!-- HEADER -->
+        <header>
+            <div class="header-top">
+                <div class="logo">
+                    <a href="home_user.html"
+                        style="text-decoration: none; color: inherit; display: flex; align-items: center;">
+                        <img src="icon/picture.png" alt="Logo Upb">
+                        <h1 style="margin-left: 10px;">Galeri</h1>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <!-- KONTEN -->
+        <div class="content">
+            <!-- SIDEBAR KIRI -->
+            <aside class="sidebar-left">
+                <ul>
+                    <li><a href="information.html">Informasi</a></li>
+                    <li><a href="galeri.html">Galeri</a></li>
+                    <li><a href="KS.php">Kritik dan Saran</a></li>
+                </ul>
+            </aside>
+
+            <!-- KONTEN UTAMA -->
+            <main class="main-content">
+                <div class="switch-buttons">
+                    <button class="switch-btn active" data-content="album">Photo</button>
+                    <button class="switch-btn" data-content="videos">Video</button>
+                </div>
+                <div class="album">
+                    <div class="responsive-container-block bg">
+                        <div class="responsive-container-block img-cont">
+                            <img class="img" src="Image/Galeri1.jpeg" style="width:100%;max-width:300px">
+                            <img class="img" src="Image/Galeri2.jpeg" style="width:100%;max-width:300px">
+                            <img class="img img-last" src="Image/Galeri3.jpeg" style="width:100%;max-width:300px">
+                        </div>
+                        <div class="responsive-container-block img-cont">
+                            <img class="img img-big" src="Image/Galeri4.jpeg" style="width:100%;max-width:300px">
+                            <img class="img img-big img-last" src="Image/Galeri5.jpeg"
+                                style="width:100%;max-width:300px">
+                            <img class="img" src="Image/Galeri7.jpeg" style="width:100%;max-width:300px">
+                            <img class="img" src="Image/Galeri2.jpeg" style="width:100%;max-width:300px">
+                        </div>
+                        <div class="responsive-container-block img-cont">
+                            <img class="img" src="Image/Galeri6.jpeg" style="width:100%;max-width:300px">
+                            <img class="img" src="Image/Galeri7.jpeg" style="width:100%;max-width:300px">
+                            <img class="img" src="Image/Galeri8.jpeg" style="width:100%;max-width:300px">
+                        </div>
+                    </div>
+                </div>
+                <!-- Video Gallery -->
+                <div id="videos" class="gallery-content">
+                    <div class="video-gallery">
+                        <div class="video-item">
+                            <iframe width="100%" height="315"
+                                src="https://www.youtube.com/embed/5cdVciTbUNw?si=jY-8WZ4TwHfYs_93"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen>
+                            </iframe>
+                            <div class="video-title">Digitalk Eps.1</div>
+                        </div>
+                        <div class="video-item">
+                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/MmIlLld5oG0"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen>
+                            </iframe>
+                            <div class="video-title">Tentang Prodi Bisnis Digital</div>
+                        </div>
+                        <div class="video-item">
+                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/gSJ-qid8T_8"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen>
+                            </iframe>
+                            <div class="video-title">MV BD CLASS C01</div>
+                        </div>
+                        <div class="video-item">
+                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/fsTopFPlm3Q"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen>
+                            </iframe>
+                            <div class="video-title">MV KANTIN PELITA BANGSA</div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    <!-- Modal Zoom -->
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+    </div>
+
+    <script src="JS/SLnya.js"></script>
+    <script src="JS/Galeri.js"></script>
+
+</body>
+
+
+</html>

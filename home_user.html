@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <title>UPB World</title>
+    <link rel="stylesheet" href="Design/home_user.css">
+    <script>
+        if (localStorage.getItem("isLoggedIn") !== "true") {
+            window.location.href = "Login.html";
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <!-- HEADER -->
+        <header>
+            <div class="header-top">
+                <div class="logo">
+                    <a href="home_user.html"
+                        style="text-decoration: none; color: inherit; display: flex; align-items: center;">
+                        <img src="Image/logo.png" alt="Logo Upb">
+                        <h1 style="margin-left: 10px;">Welcome to UPB WORLD!</h1>
+                    </a>
+                </div>
+                <nav class="menu-top">
+                    <a href="#" onclick="logout()">Logout</a>
+                </nav>
+            </div>
+
+        </header>
+        <!-- KONTEN -->
+        <div class="content">
+            <!-- SIDEBAR KIRI -->
+            <aside class="sidebar-left">
+                <ul>
+                    <li><a href="information.html">Informasi</a></li>
+                    <li><a href="galeri.html">Galeri</a></li>
+                    <li><a href="KS.php">Kritik dan Saran</a></li>
+                </ul>
+            </aside>
+
+            <!-- KONTEN UTAMA -->
+            <main class="main-content">
+                <div class="wellcome">
+                    <h2>Selamat Datang Di UPB World</h2>
+                    <img src="Image/balekambang.jpg" alt="Balekambang">
+                    <p>Disini kamu bisa informasi tentang Kampus Univrsitas pelita bangsa dan lainnya juga lohh</p>
+                </div>
+            </main>
+
+            <!-- SIDEBAR KANAN -->
+            <aside class="sidebar-right">
+                <div class="news">
+                    <h3>Berita Terbaru</h3>
+                    <ul>
+                        <li><a href="https://youtu.be/T7ov9FSDIE4?si=6n65NTRNbSrcajPi">Podcast DigiTalk Episode
+                                Baru!</a></li>
+                        <li><a href="https://www.instagram.com/p/DESlzhATWDW/">Mahasiswa Bisnis Digital UPB Mengkuti
+                                Lomba Business Simulation Competition</a></li>
+                        <li><a href="https://www.instagram.com/p/DFm4TWhToud/">UPB Got Talent 2025</a></li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </div>
+    <!-- Fungsi Logout -->
+    <script>
+        function logout() {
+            localStorage.removeItem("isLoggedIn");
+            window.location.href = "Login.html";
+        }
+    </script>
+</body>
+
+</html>
